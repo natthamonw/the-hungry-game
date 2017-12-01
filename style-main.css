@@ -45,6 +45,20 @@ a {
   color: #364652;
 }
 
+button {
+  transition: background .3s;
+  margin: 2%;
+  padding: 3%;
+  background: #364652;
+  font-family: 'Shojumaru', cursive;
+  font-size: calc( 8px + (11 - 8) * (100vw - 400px) / 400 );
+  color: white;
+}
+
+button:hover {
+  background: #80cb70;
+}
+
 .container {
   display: flex;
   justify-content: center;
