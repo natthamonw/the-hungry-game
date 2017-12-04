@@ -85,7 +85,8 @@ button:hover {
 .deck .card {
   height: 125px;
   width: 125px;
-  background: #364652;
+  background: white url('images/front-10.png');
+  background-size: contain;
   color: #ffffff;
   border-radius: 8px;
   cursor: pointer;
