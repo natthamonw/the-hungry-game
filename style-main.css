@@ -172,7 +172,7 @@ button:hover {
   z-index: 1;
   top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   display: none;
   overflow: auto;
 }
@@ -182,7 +182,7 @@ button:hover {
   border-radius: 10px;
   text-align: center;
   left: 7%;
-  top: 35%;
+  top: 20%;
   position: relative;
   width: 70%;
   margin: 10%;
