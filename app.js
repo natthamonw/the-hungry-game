@@ -144,21 +144,21 @@ $("li").click(function(){
 
   starRating();
 
-    // When all cards have matched, display a box with the final score
-    if (matchCount === 8) {
-      $("body").append($congrats);
-      clearInterval(timer);
-      $congrats.find(".moves").text(moveCount);
-      $congrats.find(".stars").text(star);
-      if (mins === '00') {
-        $congrats.find(".minuteUnit").replaceWith('');
-      } else {
-        $congrats.find(".minutes").text(mins);
-      }
-      $congrats.find(".seconds").text(secs);
-      $congrats.show();
-      $congrats.find(".congrats-button").click(function(){
-        window.location.reload();
-      });
+  // When all cards have matched, display a box with the final score
+  if (matchCount === 8) {
+    $("body").append($congrats);
+    clearInterval(timer);
+    $congrats.find(".moves").text(moveCount);
+    $congrats.find(".stars").text(star);
+    if (mins === '00') {
+      $congrats.find(".minuteUnit").replaceWith('');
+    } else {
+      $congrats.find(".minutes").text(mins);
     }
+    $congrats.find(".seconds").text(secs);
+    $congrats.show();
+    $congrats.find(".congrats-button").click(function(){
+      window.location.reload();
+    });
+  }
 });
