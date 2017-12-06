@@ -52,6 +52,7 @@ button {
   background: #364652;
   font-family: 'Shojumaru', cursive;
   font-size: calc( 8px + (11 - 8) * (100vw - 400px) / 400 );
+  border-radius: 8px;
   color: white;
 }
 
@@ -83,8 +84,8 @@ button:hover {
 }
 
 .deck .card {
-  height: 125px;
   width: 125px;
+  height: 125px;
   margin: 2%;
   background: white url('images/front-10.png');
   background-size: contain;
@@ -110,6 +111,7 @@ button:hover {
   transform: rotateY(180deg);
   background: #8693ab;
   cursor: default;
+  pointer-events: none;
 }
 
 @keyframes bounce {
@@ -133,6 +135,7 @@ button:hover {
   background: white;
   animation-name: bounce;
   animation-duration: 0.5s;
+  pointer-events: none;
 }
 
 /* Styles for the Score Panel */
@@ -169,7 +172,6 @@ button:hover {
   background-color: rgba(0,0,0,0.7);
   width: 100%;
   height: 100%;
-  padding: 20%;
   z-index: 1;
   top: 0;
   left: 0;
@@ -182,11 +184,11 @@ button:hover {
   background-color: white;
   border-radius: 10px;
   text-align: center;
-  left: 7%;
-  top: 20%;
+  left: 5%;
+  top: 0;
   position: relative;
   width: 70%;
   margin: 10%;
-  padding: 5%;
+  padding: 2%;
   color: black;
 }
