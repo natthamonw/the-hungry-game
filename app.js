@@ -83,12 +83,6 @@ function starRating() {
     $secondStar.replaceWith("<i class='fa fa-star-o'></i>");
     star = 1;
   }
-  if (moveCount === 20) {
-    $thirdStar.replaceWith("<i class='fa fa-star-o'></i>");
-    $secondStar.replaceWith("<i class='fa fa-star-o'></i>");
-    $firstStar.replaceWith("<i class='fa fa-star-o'></i>");
-    star = 0;
-  }
 }
 
 function flipBack() {
